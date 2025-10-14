@@ -63,9 +63,9 @@ export default function SobrePage() {
                 <Image
                   src="/profile.png"
                   alt="Pedro Canedo"
-                  width={400}
-                  height={400}
-                  className="object-cover scale-145"
+                  width={600}
+                  height={200}
+                  className="object-cover scale-155"
                   style={{ objectPosition: '50% 50%' }}
                 />
               </div>

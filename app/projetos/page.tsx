@@ -11,74 +11,98 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    title: 'DER-MG - Modernização de Infraestrutura',
+    title: 'DER-MG - Centralização e Otimização de Dados',
     description: 'Liderança técnica na modernização da infraestrutura do Departamento de Estradas e Rodagem de Minas Gerais.',
-    problem: 'Sistema legado com baixa escalabilidade e alto custo operacional',
-    solution: 'Migração para Azure com arquitetura de dados moderna utilizando Data Lake e Databricks',
+    problem: 'Dados fragmentados em sistemas legados sem centralização e baixa eficiência de processamento',
+    solution: 'Arquitetura de dados moderna em Azure com Data Lake, SQL Data Warehouse e Databricks para centralização e otimização',
     results: [
-      'Redução de 40% nos custos operacionais',
-      'Melhoria de 60% na performance de processamento',
-      'Implementação de pipelines CI/CD automatizados'
+      'Centralização de dados governamentais em nuvem',
+      'Implementação de pipelines CI/CD automatizados',
+      'Gestão de grandes volumes com Big Data (Hadoop, Spark, Kafka)',
+      'Automação de infraestrutura com ARM Templates (IaC)'
     ],
-    stack: ['Azure', 'Databricks', 'Python', 'Spark', 'Kafka', 'ARM Templates'],
+    stack: ['Azure', 'Data Lake', 'Databricks', 'SQL Data Warehouse', 'Python', 'SQL', 'Hadoop', 'Spark', 'Kafka', 'ARM Templates'],
     role: 'Tech Lead',
-    year: '2025'
+    year: '2024-2025'
   },
   {
-    title: 'Pipeline de Big Data - Montreal',
-    description: 'Arquitetura e implementação de pipeline de processamento de grandes volumes de dados.',
-    problem: 'Processamento manual e lento de dados governamentais',
-    solution: 'Pipeline automatizado com Hadoop, Spark e Kafka para processamento distribuído',
+    title: 'Pipeline de Dados - Montreal (DER-MG)',
+    description: 'Arquitetura e implementação de pipelines escaláveis para processamento de dados governamentais.',
+    problem: 'Necessidade de processar grandes volumes de dados de forma eficiente e segura',
+    solution: 'Pipelines de dados com Azure DevOps, Data Lake e Databricks para ETL automatizado',
     results: [
-      'Processamento de 10TB+ de dados diários',
-      'Automação de 95% dos processos manuais',
-      'Redução de tempo de processamento de horas para minutos'
+      'Arquitetura de dados eficiente com serviços Azure',
+      'Automação de pipelines CI/CD',
+      'Segurança de dados, criptografia e compliance',
+      'Processamento de dados estruturados e não estruturados'
     ],
-    stack: ['Hadoop', 'Apache Spark', 'Kafka', 'Python', 'Azure DevOps'],
-    role: 'Engenheiro de Software Sênior',
+    stack: ['Azure', 'Azure DevOps', 'Data Lake', 'Databricks', 'Python', 'SQL', 'ARM Templates'],
+    role: 'Engenheiro de Software Sênior | DevOps',
     year: '2024'
   },
   {
-    title: 'Sistema de E-commerce - MáximaTech',
-    description: 'Desenvolvimento de plataforma de e-commerce para atacado e varejo.',
-    problem: 'Sistema antigo sem suporte a alto volume de transações',
-    solution: 'Arquitetura de microservices com .NET Core, React e mensageria RabbitMQ',
+    title: 'Sistema ERP - MáximaTech',
+    description: 'Desenvolvimento e manutenção de sistemas ERP para atacado e varejo em todo o Brasil.',
+    problem: 'Necessidade de automatização de processos para clientes de atacado e varejo',
+    solution: 'Sistema robusto com backend .NET Core e frontend Angular/React, integrado com RabbitMQ',
     results: [
-      'Suporte a 10.000+ transações simultâneas',
-      'Disponibilidade de 99.9%',
-      'Interface moderna e responsiva'
+      'Automação de processos com ERPs',
+      'Sistemas internos para clientes em todo Brasil',
+      'Backend escalável com .NET Core e C#',
+      'Frontend responsivo com Angular e React PWA'
     ],
-    stack: ['.NET Core', 'React.js', 'RabbitMQ', 'Docker', 'PostgreSQL'],
+    stack: ['.NET Core', 'C#', 'ASP.NET', 'RabbitMQ', 'Docker', 'Oracle SQL', 'PostgreSQL', 'Angular', 'React.js', 'PWA'],
     role: 'Engenheiro de Software',
     year: '2024'
   },
   {
-    title: 'Automação DevOps - Conveste',
-    description: 'Implementação completa de cultura DevOps e automação de processos.',
-    problem: 'Deploys manuais demorados e propensos a erros',
-    solution: 'Pipelines CI/CD com Azure DevOps, Kubernetes e infraestrutura como código',
+    title: 'Infraestrutura DevOps - Conveste',
+    description: 'Implementação completa de cultura DevOps e automação de processos na Conveste Serviços Financeiros.',
+    problem: 'Processos manuais lentos, falta de automação e dificuldade de escalabilidade',
+    solution: 'Pipelines CI/CD automatizados com Azure DevOps, orquestração Kubernetes/Docker e logging personalizado',
     results: [
-      'Redução de 80% no tempo de deploy',
-      'Zero downtime em atualizações',
-      'Aumento de 300% na frequência de releases'
+      'Automação completa de CI/CD com Azure DevOps',
+      'Orquestração de contêineres com Kubernetes e Docker',
+      'Sistemas de logging personalizados',
+      'Monitoramento avançado com Elasticsearch e Prometheus',
+      'Promoção de cultura DevOps e práticas ágeis'
     ],
-    stack: ['Azure DevOps', 'Kubernetes', 'Docker', 'Terraform', 'Grafana'],
+    stack: ['Azure DevOps', 'Kubernetes', 'Docker', 'Elasticsearch', 'Prometheus', 'Terraform'],
     role: 'Especialista DevOps',
     year: '2023-2024'
   },
   {
-    title: 'BI Analytics Platform',
-    description: 'Plataforma de Business Intelligence para análise de dados financeiros.',
-    problem: 'Falta de visibilidade e insights sobre dados operacionais',
-    solution: 'Plataforma de BI com Python, Spark e dashboards interativos',
+    title: 'BI Analytics Platform - Conveste',
+    description: 'Plataforma de Business Intelligence para análise de dados financeiros com foco em qualidade e arquitetura.',
+    problem: 'Necessidade de processar e analisar grandes volumes de dados financeiros com qualidade',
+    solution: 'Plataforma BI com Python, Apache Spark, Pandas e arquitetura orientada a eventos (DDD)',
     results: [
-      'Insights em tempo real',
-      'Redução de 50% no tempo de análise',
-      'Decisões baseadas em dados confiáveis'
+      'Processamento de grandes volumes com Spark e Pandas',
+      'Integração com Data Lake Storage Gen2',
+      'Implementação de Domain-Driven Design (DDD)',
+      'Integração com Kafka e Azure Event Hub',
+      'Qualidade de código com TDD e Clean Code',
+      'Monitoramento com SonarQube'
     ],
-    stack: ['Python', 'Apache Spark', 'Pandas', 'Power BI', 'SQL Server'],
-    role: 'Desenvolvedor Full Stack',
-    year: '2021-2022'
+    stack: ['Python', 'Apache Spark', 'Pandas', 'Kafka', 'Azure Event Hub', 'Data Lake Gen2', 'SQL Server', 'Redis', '.NET Core', 'React'],
+    role: 'Desenvolvedor Full Stack Pleno | DevOps',
+    year: '2022-2023'
+  },
+  {
+    title: 'Cloud Infrastructure - H.Tech',
+    description: 'Desenvolvimento e manutenção de infraestrutura em Azure com foco em automação e DevOps.',
+    problem: 'Necessidade de infraestrutura escalável e automatizada em cloud para diversos clientes',
+    solution: 'Infraestrutura como código (IaC) com ARM Templates e Terraform, pipelines CI/CD automatizados',
+    results: [
+      'Infraestrutura automatizada em Azure',
+      'Pipelines CI/CD com Azure DevOps',
+      'Automação com ARM Templates e Terraform',
+      'Monitoramento com Azure Monitor e Application Insights',
+      'Alta disponibilidade e escalabilidade'
+    ],
+    stack: ['Azure', 'Azure DevOps', 'ARM Templates', 'Terraform', 'Azure Monitor', 'Application Insights'],
+    role: 'Desenvolvedor | DevOps (Freelance)',
+    year: '2019-2021'
   }
 ]
 
