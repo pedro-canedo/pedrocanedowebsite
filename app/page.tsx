@@ -213,15 +213,15 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="container py-20 bg-muted/40">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+      <section className="container py-12 md:py-20 lg:py-12 bg-muted/40">
+        <div className="max-w-4xl mx-auto text-center space-y-8 px-4 pb-8">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mt-4">
             Vamos Construir Algo Incrível Juntos?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades de colaboração.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center pt-4 pb-4">
             <Button asChild size="lg" className="whitespace-nowrap">
               <Link href="/contato" className="flex items-center gap-2">
                 Entrar em Contato

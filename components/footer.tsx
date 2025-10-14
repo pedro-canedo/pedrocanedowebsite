@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Github, Linkedin, Mail, Instagram } from 'lucide-react'
+import { TypingText } from '@/components/typing-text'
 
 const socialLinks = [
   {
@@ -45,19 +46,16 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="border-t bg-muted/40">
-      <div className="container py-12 md:py-16">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          {/* Brand */}
-          <div className="md:col-span-2">
-            <Link href="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+      <div className="container py-6">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          {/* Brand & Social */}
+          <div className="flex flex-col gap-3">
+            <Link href="/" className="flex items-center">
+              <span className="font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Pedro Canedo
               </span>
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-              Tech Lead e DevOps Engineer especializado em arquitetura de sistemas e automação de processos.
-            </p>
-            <div className="mt-6 flex space-x-4">
+            <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -67,34 +65,41 @@ export function Footer() {
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label={social.name}
                 >
-                  <social.icon className="h-5 w-5" />
+                  <social.icon className="h-4 w-4" />
                 </a>
               ))}
             </div>
           </div>
 
           {/* Links */}
-          {footerLinks.map((group) => (
-            <div key={group.title}>
-              <h3 className="font-semibold mb-4">{group.title}</h3>
-              <ul className="space-y-2">
-                {group.links.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            {footerLinks[0].links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Link
+              href="/privacidade"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              Privacidade
+            </Link>
+          </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t">
-          <p className="text-sm text-center text-muted-foreground">
+        <div className="mt-6 pt-4 border-t space-y-3">
+          <div className="text-center">
+            <TypingText 
+              text="Tech Lead e DevOps Engineer especializado em arquitetura de sistemas e automação de processos."
+              speed={50}
+              className="text-sm text-muted-foreground"
+            />
+          </div>
+          <p className="text-xs text-center text-muted-foreground">
             © {new Date().getFullYear()} Pedro Canedo. Todos os direitos reservados.
           </p>
         </div>
