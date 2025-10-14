@@ -66,13 +66,13 @@ export default function HomePage() {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg">
-                <Link href="/projetos">
+              <Button asChild size="lg" className="whitespace-nowrap">
+                <Link href="/projetos" className="flex items-center gap-2">
                   Ver Projetos
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="whitespace-nowrap">
                 <Link href="/contato">
                   Entrar em Contato
                 </Link>
@@ -203,10 +203,10 @@ export default function HomePage() {
         </div>
 
         <div className="text-center mt-8">
-          <Button asChild variant="outline" size="lg">
-            <Link href="/experiencia">
+          <Button asChild variant="outline" size="lg" className="whitespace-nowrap">
+            <Link href="/experiencia" className="flex items-center gap-2">
               Ver Experiência Completa
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
         </div>
@@ -222,13 +222,13 @@ export default function HomePage() {
             Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades de colaboração.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg">
-              <Link href="/contato">
+            <Button asChild size="lg" className="whitespace-nowrap">
+              <Link href="/contato" className="flex items-center gap-2">
                 Entrar em Contato
-                <Mail className="ml-2 h-4 w-4" />
+                <Mail className="h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="whitespace-nowrap">
               <Link href="/sobre">
                 Conheça Mais Sobre Mim
               </Link>

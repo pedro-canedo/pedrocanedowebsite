@@ -192,15 +192,15 @@ export default function ProjetosPage() {
             e tecnologias. Vamos conversar sobre como posso ajudar no seu próximo desafio.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg">
-              <a href="/contato">
+            <Button asChild size="lg" className="whitespace-nowrap">
+              <a href="/contato" className="flex items-center gap-2">
                 Entrar em Contato
-                <ExternalLink className="ml-2 h-4 w-4" />
+                <ExternalLink className="h-4 w-4" />
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg">
-              <a href="https://github.com/pedro-canedo" target="_blank" rel="noopener noreferrer">
-                <Github className="mr-2 h-4 w-4" />
+            <Button asChild variant="outline" size="lg" className="whitespace-nowrap">
+              <a href="https://github.com/pedro-canedo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Github className="h-4 w-4" />
                 Ver no GitHub
               </a>
             </Button>
