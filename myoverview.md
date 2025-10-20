@@ -7,7 +7,7 @@ GitHub: pedro-canedo
 LinkedIn: linkedin.com/in/pedrobalhe
 
 RESUMO
-Tech Lead e DevOps Engineer com 6 anos de experiência em arquitetura de sistemas, liderança de equipes e automação de processos. Especialista em desenvolvimento backend, cloud infrastructure e análise de dados. Foco em sistemas escaláveis, CI/CD e otimização de workflows.
+Tech Lead e DevOps Engineer atuo em em arquitetura e desenvolvimento de sistemas, liderança de equipes e automação de processos. Especialista em desenvolvimento backend, cloud infrastructure e análise de dados. Foco em sistemas escaláveis, CI/CD e otimização de workflows.
 
 COMPETÊNCIAS TÉCNICAS
 

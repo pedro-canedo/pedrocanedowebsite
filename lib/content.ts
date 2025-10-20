@@ -56,7 +56,7 @@ export function getProfileData(): ProfileData {
     github: 'pedro-canedo',
     linkedin: 'linkedin.com/in/pedrobalhe',
     bio: {
-      short: 'Tech Lead e DevOps Engineer com 6 anos de experiência em arquitetura de sistemas, liderança de equipes e automação de processos.',
+      short: 'Tech Lead e DevOps Engineer atuo em em arquitetura e desenvolvimento de sistemas, liderança de equipes e automação de processos.',
       long: 'Tech Lead e DevOps Engineer especializado em arquitetura de sistemas, liderança de equipes e automação de processos. Experiência sólida em desenvolvimento backend, cloud infrastructure e análise de dados. Foco em construção de sistemas escaláveis, implementação de pipelines CI/CD e otimização de workflows de desenvolvimento.'
     },
     skills: {
@@ -84,70 +84,81 @@ export function getProfileData(): ProfileData {
     experience: [
       {
         title: 'Tech Lead',
-        company: 'Montreal Oficial',
-        period: 'Fevereiro 2025 - Atual',
-        description: 'Projeto DER-MG',
+        company: 'Montreal Oficial (DER-MG)',
+        period: 'fev de 2025 - o momento · 9 meses',
+        description: 'Liderança técnica • Cloud/Data/DevOps',
         highlights: [
-          'Liderança técnica de equipes multidisciplinares',
-          'Arquitetura de dados com Data Lake e Databricks',
-          'Pipelines CI/CD com Azure DevOps',
-          'Segurança e compliance',
-          'Automação IaC com ARM Templates',
-          'Big data com Hadoop e Spark',
-          'Desenvolvimento Python e SQL'
+          'Liderança de equipes e definição de estratégia técnica',
+          'Arquitetura de dados em Azure (Data Lake, SQL DW, Databricks)',
+          'Pipelines CI/CD com Azure DevOps e automações IaC (ARM)',
+          'Segurança de dados, criptografia e compliance',
+          'Gestão de Big Data (Hadoop, Spark, Kafka)',
+          'Contribuição direta com desenvolvimento em Python e SQL'
         ],
-        technologies: ['Azure', 'Python', 'SQL', 'Databricks', 'Hadoop', 'Spark', 'Kafka']
+        technologies: ['Azure', 'Azure DevOps', 'Data Lake', 'SQL DW', 'Databricks', 'Python', 'SQL', 'Hadoop', 'Spark', 'Kafka', 'ARM Templates']
       },
       {
-        title: 'Engenheiro de Software Sênior | DevOps',
-        company: 'Montreal Oficial',
-        period: 'Setembro 2024 - Fevereiro 2025',
-        description: 'Backend sênior e DevOps',
+        title: 'Engenheiro de Software Sênior | DevOps Engineer',
+        company: 'Montreal Oficial (DER-MG)',
+        period: 'set de 2024 - fev de 2025 · 6 meses',
+        description: 'Backend Sênior • Dados e DevOps',
         highlights: [
-          'Pipelines CI/CD com Azure DevOps',
-          'IaC com ARM Templates',
-          'Arquitetura de dados',
-          'Big data com Hadoop, Spark, Kafka'
+          'Implementação de pipelines CI/CD com Azure DevOps',
+          'Automação de infraestrutura como código (ARM Templates)',
+          'Desenvolvimento backend (Python, SQL) e arquitetura de dados',
+          'Big Data: Hadoop, Spark, Kafka'
         ],
-        technologies: ['Azure', 'Python', 'Databricks', 'Hadoop', 'Spark']
+        technologies: ['Azure', 'Azure DevOps', 'Databricks', 'Python', 'SQL', 'Hadoop', 'Spark', 'Kafka', 'ARM Templates']
       },
       {
         title: 'Engenheiro de Software',
         company: 'MáximaTech',
-        period: 'Maio 2024 - Setembro 2024',
-        description: 'Sistemas para atacado e varejo',
+        period: 'mai de 2024 - set de 2024 · 5 meses',
+        description: 'E-commerce B2B/B2C • Microservices',
         highlights: [
-          'Backend .NET Core, C#, ASP.NET',
-          'Frontend Angular e React.js',
-          'Mensageria com RabbitMQ'
+          'Backend com .NET Core, C#, ASP.NET',
+          'Mensageria com RabbitMQ; containerização com Docker',
+          'Banco de dados Oracle e PostgreSQL; front com Angular/React'
         ],
         technologies: ['.NET Core', 'C#', 'ASP.NET', 'RabbitMQ', 'Docker', 'Oracle', 'PostgreSQL', 'Angular', 'React.js']
       },
       {
-        title: 'Especialista DevOps',
+        title: 'Especialista DevOps (DevOps Engineer)',
         company: 'Conveste Serviços Financeiros',
-        period: 'Julho 2023 - Maio 2024',
-        description: 'Automação e orquestração',
+        period: 'jul de 2023 - mai de 2024 · 11 meses',
+        description: 'DevOps • Kubernetes & Observability',
         highlights: [
-          'Automação CI/CD com Azure DevOps',
-          'Orquestração Kubernetes e Docker',
-          'Logging personalizado',
-          'Arquitetura cloud'
+          'CI/CD com Azure DevOps (build/test/deploy confiável)',
+          'Orquestração de contêineres (Kubernetes e Docker)',
+          'Sistemas de logging personalizados, monitoramento e análise em tempo real',
+          'Suporte a decisões de arquitetura e padrões de segurança'
         ],
-        technologies: ['Azure DevOps', 'Kubernetes', 'Docker']
+        technologies: ['Azure DevOps', 'Kubernetes', 'Docker', 'Grafana']
       },
       {
-        title: 'Desenvolvedor Full Stack Pleno | DevOps',
+        title: 'Desenvolvedor Full Stack - Pleno | DevOps',
         company: 'Conveste',
-        period: 'Julho 2022 - Julho 2023',
-        description: 'Full stack e DevOps',
+        period: 'jul de 2022 - jul de 2023 · 1 ano 1 mês',
+        description: 'Full-Stack • DDD/TDD/Clean Code',
         highlights: [
-          'Stack completo: C#, .NET, JavaScript, Python, PHP',
-          'React, Next.js, FastAPI, Django',
-          'Kubernetes, Docker, Kafka',
-          'Metodologias DDD, TDD, Clean Code, Scrum'
+          'C#, .NET, JavaScript, Python, PHP; React, Next.js, FastAPI, Django',
+          'Kubernetes, Docker, Kafka; Azure DevOps (CI/CD)',
+          'Documentação técnica e qualidade com foco em métricas'
         ],
-        technologies: ['C#', '.NET', 'JavaScript', 'Python', 'React', 'Next.js', 'FastAPI', 'Django', 'Kubernetes', 'Docker', 'Kafka']
+        technologies: ['C#', '.NET', 'JavaScript', 'Python', 'React', 'Next.js', 'FastAPI', 'Django', 'Kubernetes', 'Docker', 'Kafka', 'Azure DevOps']
+      },
+      {
+        title: 'Desenvolvedor | DevOps',
+        company: 'H.Tech Consultoria (Freelance)',
+        period: 'jan de 2019 - jan de 2021 · 2 anos 1 mês',
+        description: 'Azure • IaC • Observabilidade',
+        highlights: [
+          'Pipelines CI/CD em Azure DevOps (build, testes, releases)',
+          'Infraestrutura como código (ARM/Terraform) e otimização em Azure',
+          'Monitoramento com Azure Monitor e Application Insights',
+          'Colaboração com dev/QA/ops e melhorias contínuas com foco em segurança'
+        ],
+        technologies: ['Azure DevOps', 'ARM Templates', 'Terraform', 'Azure Monitor', 'App Insights']
       }
     ],
     education: [

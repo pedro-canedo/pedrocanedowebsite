@@ -5,7 +5,7 @@ export function StructuredData() {
     name: 'Pedro Augusto Canedo Araujo Obalhe',
     alternateName: 'Pedro Canedo',
     jobTitle: 'Tech Lead',
-    description: 'Tech Lead e DevOps Engineer com 6 anos de experiência em arquitetura de sistemas, liderança de equipes e automação de processos.',
+    description: 'Tech Lead e DevOps Engineer atuo em em arquitetura e desenvolvimento de sistemas, liderança de equipes e automação de processos.',
     url: 'https://pedrocanedo.dev',
     email: 'devpedrocanedo@gmail.com',
     image: 'https://pedrocanedo.dev/profile.png',

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: 'Pedro Canedo | Tech Lead & DevOps Engineer',
     template: '%s | Pedro Canedo'
   },
-  description: 'Tech Lead e DevOps Engineer com 6 anos de experiência em arquitetura de sistemas, liderança de equipes e automação de processos. Especialista em Azure, Python, e desenvolvimento de soluções escaláveis.',
+  description: 'Tech Lead e DevOps Engineer atuo em em arquitetura e desenvolvimento de sistemas, liderança de equipes e automação de processos. Especialista em Azure, Python, e desenvolvimento de soluções escaláveis.',
   keywords: ['Tech Lead', 'DevOps', 'Azure', 'Python', 'Software Engineer', 'Cloud Architecture', 'CI/CD'],
   authors: [{ name: 'Pedro Canedo', url: 'https://pedrocanedo.dev' }],
   creator: 'Pedro Canedo',
