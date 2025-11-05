@@ -36,7 +36,7 @@ export function HomeContent({ profile }: HomeContentProps) {
     {
       icon: Code2,
       title: 'Backend',
-      description: 'Desenvolvimento com Python, Go, TypeScript e .NET em sistemas escaláveis',
+      description: 'Desenvolvimento com Python, TypeScript, C#/.NET e PHP em sistemas escaláveis',
       color: 'text-primary'
     }
   ]
@@ -156,15 +156,15 @@ export function HomeContent({ profile }: HomeContentProps) {
 
         <StaggerContainer className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {highlights.map((item) => (
-            <StaggerItem key={item.title}>
-              <ScaleOnHover>
-                <Card className="border-2 hover:border-primary/50 transition-colors h-full">
-                  <CardHeader>
+            <StaggerItem key={item.title} className="flex">
+              <ScaleOnHover className="flex w-full">
+                <Card className="border-2 hover:border-primary/50 transition-colors flex flex-col w-full">
+                  <CardHeader className="flex-shrink-0">
                     <item.icon className={`h-12 w-12 mb-4 ${item.color}`} />
                     <CardTitle className="text-xl">{item.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base">
+                  <CardContent className="flex-grow flex flex-col">
+                    <CardDescription className="text-base flex-grow">
                       {item.description}
                     </CardDescription>
                   </CardContent>
@@ -239,9 +239,9 @@ export function HomeContent({ profile }: HomeContentProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="container py-12 md:py-20 lg:py-12 bg-muted/40">
+      {/* <section className="container py-12 md:py-20 lg:py-16 bg-muted/40 pb-16 md:pb-24 lg:pb-20">
         <FadeIn delay={0.2}>
-          <div className="max-w-4xl mx-auto text-center space-y-8 px-4 pb-8">
+          <div className="max-w-4xl mx-auto text-center space-y-8 px-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mt-4">
               Vamos Construir Algo Incrível Juntos?
             </h2>
@@ -263,7 +263,7 @@ export function HomeContent({ profile }: HomeContentProps) {
             </div>
           </div>
         </FadeIn>
-      </section>
+      </section> */}
     </>
   )
 }
