@@ -185,6 +185,21 @@ export function SobreContent({ profile }: SobreContentProps) {
               </div>
             </div>
           </StaggerItem>
+
+          {profile.skills.aiML && profile.skills.aiML.length > 0 && (
+            <StaggerItem>
+              <div>
+                <h3 className="text-xl font-semibold mb-4">IA & Machine Learning</h3>
+                <div className="flex flex-wrap gap-2">
+                  {profile.skills.aiML.map((skill) => (
+                    <Badge key={skill} variant="secondary" className="text-sm">
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            </StaggerItem>
+          )}
         </StaggerContainer>
       </section>
 
@@ -236,6 +251,31 @@ export function SobreContent({ profile }: SobreContentProps) {
           ))}
         </StaggerContainer>
       </section>
+
+      {/* Certificações */}
+      {profile.certifications && profile.certifications.length > 0 && (
+        <section className="mb-20">
+          <FadeIn delay={0.1}>
+            <h2 className="text-3xl font-bold tracking-tighter mb-8">Licenças e Certificados</h2>
+          </FadeIn>
+          <StaggerContainer className="space-y-6">
+            {profile.certifications.map((cert, index) => (
+              <StaggerItem key={index}>
+                <ScaleOnHover scale={1.01}>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-lg">{cert.name}</CardTitle>
+                      <CardDescription className="text-base">
+                        {cert.issuer} • {cert.period}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </ScaleOnHover>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+        </section>
+      )}
 
       {/* Objetivos */}
       <section>

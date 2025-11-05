@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     default: 'Pedro Canedo | Tech Lead & DevOps Engineer',
     template: '%s | Pedro Canedo'
   },
-  description: 'Tech Lead e DevOps Engineer atuo em em arquitetura e desenvolvimento de sistemas, liderança de equipes e automação de processos. Especialista em Azure, Python, e desenvolvimento de soluções escaláveis.',
-  keywords: ['Tech Lead', 'DevOps', 'Azure', 'Python', 'Software Engineer', 'Cloud Architecture', 'CI/CD'],
+  description: 'Tech Lead e Desenvolvedor Full-Stack com base sólida em análise de dados, DDD e arquitetura orientada a eventos. Especialista em IA aplicada com experiência em OCR, LLMs com RAG e fine-tuning. Especialista em Azure, Python e desenvolvimento de soluções escaláveis.',
+  keywords: ['Tech Lead', 'DevOps', 'Azure', 'Python', 'Software Engineer', 'Cloud Architecture', 'CI/CD', 'IA', 'Machine Learning', 'LLMs', 'RAG', 'OCR', 'Fine-tuning'],
   authors: [{ name: 'Pedro Canedo', url: 'https://pedrocanedo.dev' }],
   creator: 'Pedro Canedo',
   openGraph: {
@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: 'https://pedrocanedo.dev',
     title: 'Pedro Canedo | Tech Lead & DevOps Engineer',
-    description: 'Tech Lead e DevOps Engineer especializado em arquitetura de sistemas e automação de processos.',
+    description: 'Tech Lead e Desenvolvedor Full-Stack especializado em arquitetura de sistemas, automação de processos e IA aplicada com OCR, LLMs e RAG.',
     siteName: 'Pedro Canedo',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pedro Canedo | Tech Lead & DevOps Engineer',
-    description: 'Tech Lead e DevOps Engineer especializado em arquitetura de sistemas e automação de processos.',
+    description: 'Tech Lead e Desenvolvedor Full-Stack especializado em arquitetura de sistemas, automação de processos e IA aplicada com OCR, LLMs e RAG.',
   },
   robots: {
     index: true,

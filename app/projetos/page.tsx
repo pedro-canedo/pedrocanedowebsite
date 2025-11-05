@@ -11,6 +11,41 @@ export const metadata: Metadata = {
 
 const projects = [
   {
+    title: 'Palpite de Craque',
+    description: 'Site de análise para apostas esportivas com IA. Crawlers em Python, pipelines de dados e análises temporais; RAG para sumarização e fine-tuning para enriquecer insights por faixa temporal.',
+    problem: 'Necessidade de análise inteligente de dados esportivos para auxiliar em apostas com base em padrões temporais e estatísticas',
+    solution: 'Plataforma com crawlers em Python para coleta de dados, pipelines de processamento, análises temporais avançadas, RAG para sumarização de informações e fine-tuning de modelos para insights personalizados por faixa temporal',
+    results: [
+      'Análise automatizada de dados esportivos com crawlers Python',
+      'Pipelines de dados eficientes para processamento contínuo',
+      'Análises temporais para identificar padrões históricos',
+      'RAG para sumarização inteligente de informações',
+      'Fine-tuning de modelos para insights personalizados por período'
+    ],
+    stack: ['Python', 'RAG', 'Fine-tuning', 'Crawlers', 'Data Pipelines', 'LLMs', 'IA'],
+    role: 'Projeto Autoral',
+    year: '2024-2025',
+    url: 'https://palpitedecraque.com'
+  },
+  {
+    title: 'CaixaZen',
+    description: 'Plataforma pessoal 100% gratuita de controle e gestão financeira (contas a pagar/receber, fluxo de caixa, controle de contas e relatórios).',
+    problem: 'Falta de ferramentas gratuitas e simples para controle financeiro pessoal e empresarial',
+    solution: 'Plataforma web completa e gratuita para gestão financeira com funcionalidades de contas a pagar/receber, fluxo de caixa, controle de múltiplas contas e relatórios detalhados',
+    results: [
+      'Plataforma 100% gratuita e acessível',
+      'Controle completo de contas a pagar e receber',
+      'Gestão de fluxo de caixa em tempo real',
+      'Controle de múltiplas contas financeiras',
+      'Relatórios detalhados e análises financeiras',
+      'Interface intuitiva e fácil de usar'
+    ],
+    stack: ['Next.js', 'React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
+    role: 'Projeto Autoral',
+    year: '2024-2025',
+    url: 'https://caixazen.online'
+  },
+  {
     title: 'DER-MG - Centralização e Otimização de Dados',
     description: 'Liderança técnica na modernização da infraestrutura do Departamento de Estradas e Rodagem de Minas Gerais.',
     problem: 'Dados fragmentados em sistemas legados sem centralização e baixa eficiência de processamento',
@@ -176,6 +211,18 @@ export default function ProjetosPage() {
                   ))}
                 </div>
               </div>
+
+              {/* Link do Projeto */}
+              {project.url && (
+                <div className="pt-4 border-t">
+                  <Button asChild variant="outline" className="w-full sm:w-auto">
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <ExternalLink className="h-4 w-4" />
+                      Visitar Projeto
+                    </a>
+                  </Button>
+                </div>
+              )}
             </CardContent>
           </Card>
         ))}

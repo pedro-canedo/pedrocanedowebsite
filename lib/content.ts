@@ -20,11 +20,19 @@ export interface ProfileData {
     bigData: string[]
     tools: string[]
     methodologies: string[]
+    aiML?: string[]
   }
   expertise: string[]
   experience: Experience[]
   education: Education[]
+  certifications?: Certification[]
   goals: string[]
+}
+
+export interface Certification {
+  name: string
+  issuer: string
+  period: string
 }
 
 export interface Experience {
@@ -51,106 +59,105 @@ export function getProfileData(): ProfileData {
   return {
     name: 'Pedro Augusto Canedo Araujo Obalhe',
     role: 'Tech Lead',
-    location: 'Brasil',
+    location: 'Goiânia, GO, Brasil',
     email: 'devpedrocanedo@gmail.com',
     github: 'pedro-canedo',
     linkedin: 'linkedin.com/in/pedrobalhe',
     bio: {
-      short: 'Tech Lead e DevOps Engineer atuo em em arquitetura e desenvolvimento de sistemas, liderança de equipes e automação de processos.',
-      long: 'Tech Lead e DevOps Engineer especializado em arquitetura de sistemas, liderança de equipes e automação de processos. Experiência sólida em desenvolvimento backend, cloud infrastructure e análise de dados. Foco em construção de sistemas escaláveis, implementação de pipelines CI/CD e otimização de workflows de desenvolvimento.'
+      short: 'Tech Lead e Desenvolvedor Full-Stack com base sólida em análise de dados, DDD e arquitetura orientada a eventos, TDD e Clean Code. Especialista em IA aplicada com experiência em OCR, LLMs com RAG e fine-tuning.',
+      long: 'Tech Lead e Desenvolvedor Full-Stack com base sólida em análise de dados (Python, Spark, BI), DDD e arquitetura orientada a eventos (Kafka), TDD e Clean Code. Atuação hands-on em C#/.NET, JavaScript/React/Next.js, Python e PHP, com foco em DevOps no Azure (CI/CD, Docker, Kubernetes, observabilidade). Experiência em IA aplicada: OCR em produção, LLMs com RAG e fine-tuning/LoRA para busca semântica, normalização pós-OCR e automação de processos. Foco em qualidade, custo/latência e entrega contínua de valor ao negócio.'
     },
     skills: {
-      languages: ['Python', 'JavaScript', 'TypeScript', 'Go', 'C#', 'PHP', 'SQL'],
-      frameworks: ['React.js', 'Node.js', 'Django', 'FastAPI', '.NET Core', 'ASP.NET', 'Angular', 'Next.js'],
-      cloud: ['Azure', 'AWS', 'GCP', 'Docker', 'Kubernetes', 'Terraform', 'ARM Templates', 'Azure DevOps', 'GitHub Actions', 'Jenkins'],
-      databases: ['PostgreSQL', 'MongoDB', 'MySQL', 'Oracle', 'SQL Server', 'Redis'],
-      bigData: ['Hadoop', 'Apache Spark', 'Apache Kafka', 'Databricks', 'Pandas', 'Data Lake', 'SQL Data Warehouse'],
-      tools: ['Git', 'Linux', 'RabbitMQ', 'Grafana', 'Prometheus', 'Azure Monitor', 'Application Insights'],
-      methodologies: ['Scrum', 'Agile', 'DDD', 'TDD', 'Clean Code', 'CI/CD', 'IaC']
+      languages: ['Python', 'JavaScript', 'TypeScript', 'C#', 'PHP', 'SQL', 'Node.js'],
+      frameworks: ['React.js', 'Next.js', 'Node.js', 'Redux', '.NET Core', 'ASP.NET', 'EF Core', 'FastAPI', 'Django', 'Laravel/Blade', 'Angular'],
+      cloud: ['Azure', 'AKS (Kubernetes)', 'Docker', 'Azure DevOps (CI/CD)', 'IaC (Terraform/ARM/Bicep)', 'SonarQube'],
+      databases: ['SQL Server', 'Oracle', 'PostgreSQL', 'MySQL', 'ADLS Gen2'],
+      bigData: ['Apache Spark', 'Pandas', 'NumPy', 'SQL Server', 'Oracle', 'ADLS Gen2'],
+      tools: ['Git', 'Linux', 'Apache Kafka', 'Azure Event Hubs', 'Azure Monitor', 'Application Insights', 'Elasticsearch', 'Prometheus'],
+      methodologies: ['Scrum', 'Agile', 'DDD', 'TDD', 'Clean Code', 'CI/CD', 'IaC', 'REST/GraphQL'],
+      aiML: ['LLMs (OpenAI/Azure/HF)', 'RAG', 'Embeddings', 'OCR (Tesseract, Azure Document Intelligence, Google Vision)', 'Fine-tuning', 'LoRA', 'Guardrails']
     },
     expertise: [
       'Liderança técnica de equipes multidisciplinares',
-      'Mentoria de desenvolvedores',
-      'Arquitetura de microservices',
-      'APIs RESTful',
-      'Automação CI/CD',
-      'Observabilidade',
-      'Containerização',
-      'Segurança e compliance',
-      'Otimização de queries SQL',
-      'ETL pipelines',
-      'Business Intelligence'
+      'Arquiteturas escaláveis em Azure (Data Lake, SQL DW, Databricks)',
+      'Big Data: Hadoop, Spark, Kafka; governança de dados',
+      'Segurança de dados, criptografia, privacidade e governança',
+      'Pipelines CI/CD com Azure DevOps; quality gates (SonarQube)',
+      'IaC em Azure (Terraform/Bicep/ARM); AKS, App Service, ACR, AI Services',
+      'RAG, embeddings, re-ranking; OCR com Tesseract/Azure',
+      'Fine-tuning/LoRA para busca semântica e automação',
+      'Observabilidade e custo por requisição/token',
+      'Full-stack (.NET Core/React/Next.js) com DDD, event-driven (Kafka), TDD/Clean Code',
+      'IA aplicada: OCR, LLMs com RAG e fine-tuning para busca semântica'
     ],
     experience: [
       {
         title: 'Tech Lead',
-        company: 'Montreal Oficial (DER-MG)',
-        period: 'fev de 2025 - o momento · 9 meses',
+        company: 'Montreal Oficial',
+        period: 'fev de 2025 - atual · Remoto',
         description: 'Liderança técnica • Cloud/Data/DevOps',
         highlights: [
-          'Liderança de equipes e definição de estratégia técnica',
-          'Arquitetura de dados em Azure (Data Lake, SQL DW, Databricks)',
-          'Pipelines CI/CD com Azure DevOps e automações IaC (ARM)',
-          'Segurança de dados, criptografia e compliance',
-          'Gestão de Big Data (Hadoop, Spark, Kafka)',
-          'Contribuição direta com desenvolvimento em Python e SQL'
+          'Backend sênior com responsabilidades de DevOps; pipelines Azure DevOps; IaC (ARM)',
+          'Liderança técnica de squads e definição de arquiteturas escaláveis em Azure (Data Lake, SQL DW, Databricks)',
+          'CI/CD com Azure DevOps; IaC (ARM/Bicep/Terraform); segurança, criptografia e compliance',
+          'Big Data: Hadoop, Spark, Kafka; governança de dados (estruturados, semi-estruturados, NoSQL)',
+          'Atuação no DER-MG: centralização e otimização de dados em nuvem; coordenação multidisciplinar',
+          'Continuidade hands-on em Python/SQL e revisão de código/arquitetura'
         ],
-        technologies: ['Azure', 'Azure DevOps', 'Data Lake', 'SQL DW', 'Databricks', 'Python', 'SQL', 'Hadoop', 'Spark', 'Kafka', 'ARM Templates']
+        technologies: ['Azure', 'Azure DevOps', 'Data Lake', 'SQL DW', 'Databricks', 'Python', 'SQL', 'Hadoop', 'Spark', 'Kafka', 'ARM Templates', 'Bicep', 'Terraform']
       },
       {
         title: 'Engenheiro de Software Sênior | DevOps Engineer',
-        company: 'Montreal Oficial (DER-MG)',
-        period: 'set de 2024 - fev de 2025 · 6 meses',
+        company: 'Montreal Oficial',
+        period: 'set de 2024 - fev de 2025 · 6 meses · Remoto',
         description: 'Backend Sênior • Dados e DevOps',
         highlights: [
-          'Implementação de pipelines CI/CD com Azure DevOps',
-          'Automação de infraestrutura como código (ARM Templates)',
-          'Desenvolvimento backend (Python, SQL) e arquitetura de dados',
-          'Big Data: Hadoop, Spark, Kafka'
+          'Backend sênior com responsabilidades de DevOps; pipelines Azure DevOps; IaC (ARM)',
+          'Liderança técnica de squads e definição de arquiteturas escaláveis em Azure (Data Lake, SQL DW, Databricks)',
+          'CI/CD com Azure DevOps; IaC (ARM/Bicep/Terraform); segurança, criptografia e compliance',
+          'Big Data: Hadoop, Spark, Kafka; governança de dados (estruturados, semi-estruturados, NoSQL)',
+          'Atuação no DER-MG: centralização e otimização de dados em nuvem; coordenação multidisciplinar'
         ],
-        technologies: ['Azure', 'Azure DevOps', 'Databricks', 'Python', 'SQL', 'Hadoop', 'Spark', 'Kafka', 'ARM Templates']
+        technologies: ['Azure', 'Azure DevOps', 'Databricks', 'Python', 'SQL', 'Hadoop', 'Spark', 'Kafka', 'ARM Templates', 'Bicep', 'Terraform']
       },
       {
         title: 'Engenheiro de Software',
         company: 'MáximaTech',
-        period: 'mai de 2024 - set de 2024 · 5 meses',
+        period: 'mai de 2024 - set de 2024 · 5 meses · Remoto',
         description: 'E-commerce B2B/B2C • Microservices',
         highlights: [
-          'Backend com .NET Core, C#, ASP.NET',
-          'Mensageria com RabbitMQ; containerização com Docker',
-          'Banco de dados Oracle e PostgreSQL; front com Angular/React'
+          '.NET Core, C#, ASP.NET, RabbitMQ, Docker, Oracle SQL e PostgreSQL',
+          'Front-end com Angular e experiência em React.js/PWA para soluções de atacado/varejo integradas a ERPs'
         ],
-        technologies: ['.NET Core', 'C#', 'ASP.NET', 'RabbitMQ', 'Docker', 'Oracle', 'PostgreSQL', 'Angular', 'React.js']
+        technologies: ['.NET Core', 'C#', 'ASP.NET', 'RabbitMQ', 'Docker', 'Oracle', 'PostgreSQL', 'Angular', 'React.js', 'PWA']
       },
       {
         title: 'Especialista DevOps (DevOps Engineer)',
         company: 'Conveste Serviços Financeiros',
-        period: 'jul de 2023 - mai de 2024 · 11 meses',
+        period: 'jul de 2023 - mai de 2024 · 11 meses · Goiânia-GO',
         description: 'DevOps • Kubernetes & Observability',
         highlights: [
-          'CI/CD com Azure DevOps (build/test/deploy confiável)',
-          'Orquestração de contêineres (Kubernetes e Docker)',
-          'Sistemas de logging personalizados, monitoramento e análise em tempo real',
-          'Suporte a decisões de arquitetura e padrões de segurança'
+          'CI/CD no Azure DevOps; Kubernetes/Docker; logging customizado e observabilidade',
+          'Arquitetura cloud e boas práticas de segurança; cultura DevOps e melhoria contínua'
         ],
-        technologies: ['Azure DevOps', 'Kubernetes', 'Docker', 'Grafana']
+        technologies: ['Azure DevOps', 'Kubernetes', 'Docker', 'Azure Monitor', 'Application Insights', 'Elasticsearch', 'Prometheus']
       },
       {
-        title: 'Desenvolvedor Full Stack - Pleno | DevOps',
-        company: 'Conveste',
-        period: 'jul de 2022 - jul de 2023 · 1 ano 1 mês',
+        title: 'Desenvolvedor Full Stack – Pleno | DevOps',
+        company: 'Conveste Serviços Financeiros',
+        period: 'jul de 2022 - jul de 2023 · 1 ano 1 mês · Goiânia-GO',
         description: 'Full-Stack • DDD/TDD/Clean Code',
         highlights: [
-          'C#, .NET, JavaScript, Python, PHP; React, Next.js, FastAPI, Django',
-          'Kubernetes, Docker, Kafka; Azure DevOps (CI/CD)',
-          'Documentação técnica e qualidade com foco em métricas'
+          'Full-stack (.NET Core/React/Next.js) com DDD, event-driven (Kafka), TDD/Clean Code',
+          'Dados: Spark, Pandas, NumPy; ADLS Gen2 e SQL Server',
+          'IA aplicada: OCR, LLMs com RAG e fine-tuning para busca semântica e automação'
         ],
-        technologies: ['C#', '.NET', 'JavaScript', 'Python', 'React', 'Next.js', 'FastAPI', 'Django', 'Kubernetes', 'Docker', 'Kafka', 'Azure DevOps']
+        technologies: ['C#', '.NET Core', 'JavaScript', 'Python', 'React', 'Next.js', 'FastAPI', 'Django', 'Kubernetes', 'Docker', 'Kafka', 'Azure DevOps', 'Spark', 'Pandas', 'NumPy', 'ADLS Gen2', 'SQL Server']
       },
       {
-        title: 'Desenvolvedor | DevOps',
-        company: 'H.Tech Consultoria (Freelance)',
-        period: 'jan de 2019 - jan de 2021 · 2 anos 1 mês',
+        title: 'Desenvolvedor | DevOps (Freelance)',
+        company: 'H.Tech Consultoria em Tecnologia',
+        period: 'jan de 2019 - jan de 2021 · 2 anos 1 mês · Remoto',
         description: 'Azure • IaC • Observabilidade',
         highlights: [
           'Pipelines CI/CD em Azure DevOps (build, testes, releases)',
@@ -158,34 +165,58 @@ export function getProfileData(): ProfileData {
           'Monitoramento com Azure Monitor e Application Insights',
           'Colaboração com dev/QA/ops e melhorias contínuas com foco em segurança'
         ],
-        technologies: ['Azure DevOps', 'ARM Templates', 'Terraform', 'Azure Monitor', 'App Insights']
+        technologies: ['Azure DevOps', 'ARM Templates', 'Terraform', 'Azure Monitor', 'Application Insights']
       }
     ],
     education: [
       {
-        degree: 'MBA em Engenharia de Software',
-        institution: 'FAMEF',
-        period: 'Outubro 2023 - Janeiro 2025',
+        degree: 'Graduação - Análise e Desenvolvimento de Sistemas',
+        institution: 'Pontifícia Universidade Católica de Goiás (PUC-GO)',
+        period: 'jan/2021 – abr/2024',
         areas: [
-          'Ciclo de Vida de Software Agile',
-          'Engenharia de Requisitos',
-          'Arquitetura e Projeto de Software',
-          'Teste e Qualidade',
-          'Gerenciamento de Projetos',
-          'Governança de TI'
-        ]
-      },
-      {
-        degree: 'Tecnologia em Análise e Desenvolvimento de Sistemas',
-        institution: 'PUC-GO',
-        period: 'Janeiro 2021 - Abril 2024',
-        areas: [
+          'Análise e Desenvolvimento de Sistemas',
           'Algoritmos e Estruturas de Dados',
           'Engenharia de Software',
-          'Segurança da Informação',
-          'Desenvolvimento Cliente/Servidor',
-          'Metodologias Ágeis'
+          'Desenvolvimento de Software',
+          'Arquitetura de Sistemas'
         ]
+      }
+    ],
+    certifications: [
+      {
+        name: 'Habilidades Aplicadas: Implementar um data warehouse no Microsoft Fabric',
+        issuer: 'Microsoft',
+        period: 'jan/2025'
+      },
+      {
+        name: 'Fundamentos para Desenvolvimento de Software',
+        issuer: 'Microsoft',
+        period: 'ago/2023'
+      },
+      {
+        name: 'Azure: gerencie Kubernetes com AKS e ACR',
+        issuer: 'Alura',
+        period: 'ago/2022'
+      },
+      {
+        name: 'Kubernetes: Deployments, Volumes e Escalabilidade',
+        issuer: 'Alura',
+        period: 'ago/2022'
+      },
+      {
+        name: 'Docker: Criando containers sem dor de cabeça',
+        issuer: 'Alura',
+        period: 'jan/2021'
+      },
+      {
+        name: 'Formação Certificação C# Programming',
+        issuer: 'Alura',
+        period: 'jan/2021'
+      },
+      {
+        name: 'REST com NodeJS: API com Express e MySQL',
+        issuer: 'Alura',
+        period: 'jan/2021'
       }
     ],
     goals: [
